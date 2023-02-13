@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 4 - les formulaires/</title>
+</head>
+<body>
+    <h1>Koulali hafssa&nbsp;-&nbsp;Les formulaires</h1>
+    <h2>mon premier formulaire</h2>
+                <form action="#" method="post">
+                    <div>
+                        <label for="homme">homme</label>
+                        <input type="radio" name="genre" id="homme" value="homme">
+                        <label for="femme">femme</label>
+                        <input type="radio" name="genre" id="femme" value="femme">
+                        <label for="nonRenseigné">non renseigné</label>
+                        <input type="radio" name="genre" id="nonRenseigné" value="nonRenseigné">
+                    </div>
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" name="lastname" id="Nom">
+                    </div>
+                    <div>
+                        <label for="prenom">Prenom</label>
+                        <input type="text" name="firstname" id="Prenom">
+                    </div>
+                    <div>
+                        <label for="Age">Age</label>
+                        <input type="number" name="age" id="âge"
+                        min="16" max="99">
+                    </div>
+                            <div>
+                    <label for="e-mail">e-mail:</e-mail></label>
+                    <input type="email" name="" id="e-mail">
+                            </div>
+                            <label for="msg">message</label>
+                            <textarea name="message" id="msg" ></textarea>
+                            <div>
+                    <input type="checkbox" name="coche" id="rgpd">            
+                    <label for="rgpd">En cochant cette case j'accepte les conditions
+                        relative à l'utilisation de mes données personnelles
+                        (accéder aux mentions légales)</label>
+                            </div>
+                    <input type="submit" value="Envoyer le message">
+                </form>
+
+            <hr>
+                <h3>ensemble de champs</h3>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <fieldset>
+                                <legend>Identité</legend>
+                                <label for="">homme</label>
+                                <input type="radio" name="" id="homme" value="homme">
+                                <label for="">femme</label>
+                                <input type="radio" name="" id="femme" value="femme">
+                                <label for="">non renseigné</label>
+                                <input type="radio" name="" id="nonRenseigné" value="nonRenseigné">
+                                <div>
+                                    <label for="">Nom</label>
+                                    <input type="text" name="" id="Nom" placeholder="ex: Deschamps">
+                                </div>
+                                <div>
+                                    <label for="">Prénom</label>
+                                    <input type="text" name="" id="Prénom" placeholder="ex:Didier">
+                                </div>
+                                <div>
+                                    <label for="">Age</label>
+                                    <input type="number" name="" id="Age"
+                                    min="16" max="99" placeholder="ex:19">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Situation personnelles</legend>
+                                <label for="">Celibataire</label>
+                                <input type="radio" name="" id="celibataire">
+                                <label for="">Marié</label>
+                                <input type="radio" name="" id="Marié">
+                                <label for="">Veuf</label>
+                                <input type="radio" name="" id="Veuf">
+                                <label for="">Union Libre</label>
+                                <input type="radio" name="" id="UnionLibre">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Contact</legend>
+                                <div>
+                                    <label for="">Telephone</label>
+                                    <input type="tel" name="" id="telephone" placeholder="ex:0655774433">
+                                </div>
+                                <div>
+                                    <label for="">Email</label>
+                                    <input type="email" name="" id="Email" placeholder="ex: d.d@gmail.com">
+                                </div>
+                            </fieldset>
+                            <div>
+                                <input type="checkbox" name="cochebis" id="rgpd">
+                                <label for="rgpd">En cochant cette case je confirme que les données renseignées sont exactes.</label>
+                            </div>
+                            <input type="submit" value="transmettre mes coordonnées">
+                        </fieldset>
+                        </form>
+            </hr>
+</body>
+</html>
